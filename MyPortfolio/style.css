@@ -16,20 +16,22 @@ nav{
     width: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    overflow-x: hidden;
+    justify-content: space-around;
 }
+
 nav ul li{
     display: block;
     color: #eee;
     padding: 10px;
 
 }
+
 a{
     color: #eee;
     text-decoration: none;
     
 }
+
 .fas, .fab{
     font-size: 30px;
 }
@@ -37,47 +39,142 @@ a{
 .navItems{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 2px;
 }
 
-
- 
-/* .span{
-    background-color: #b1b1b1;
-     color: #eee; 
-    opacity: 0.75;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    text-align: center;
-    cursor: pointer;
-}
- */
-
  main{
-     margin-left: 150px;
+     margin: 20px 200px 20px 400px;
      padding: 0;
-     /* background: url(./images/mainImage.svg);
-     background-position: center; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
  }
 
- .headImage{
+.headImage{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.headImage img{
+     max-width: 1000px;
+}
+
+ #profile{
      width: 500px;
-     height: 500px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
  }
 
-/* header{
-    background: url(MyPortfolio\images\undraw_portfolio_website_lidw.svg);
-       background-position: center; 
-    
-} */
-
- h1, p{
-     text-align: center;
+ .section1{
+     display: flex;
+     justify-content: space-around;
+     gap: 50px;
+     padding: 50px;
  }
 
- 
+ .section1 h2{
+     text-transform: uppercase;
+     margin-bottom: 4px;
+     color: #00b4d8;
+ }
+
+ .details, .about{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+ }
+
+ .details span{
+     font-size: 20px;
+ }
+
+ .photo img{
+     height: 200px;
+     width: 200px;
+     border-radius: 50%; 
+ }
+
+ .info{
+     font-weight: 700;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+
+ @media (max-width: 1110px){
+     .headImage img{
+       width: 800px;
+     }
+ }
+
+ @media (max-width: 1252px){
+     .section1{
+         display: flex;
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     .photo{
+         max-width: 500px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+
+ @media (max-width: 960px){
+     main{
+         margin: 50px 50px 50px 200px;
+     }
+     .section1{
+         display: block;
+         padding: 0;
+         margin: 0;
+     }
+     .about{
+         width: 500px;
+     }
+     .headImage img{
+        width: 700px;
+      }
+      .details{
+          width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+ }
+
+ @media (max-width: 875px){
+    .headImage img{
+        width: 500px;
+      }
+ }
+
+ @media (max-width: 710px){
+    nav{
+        right: 0;
+        width: 100%;
+        height: 90px;
+        display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    }
+    ul{
+        display: flex;
+    }
+    main{
+        margin: 100px 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ }
