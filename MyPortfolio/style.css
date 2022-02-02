@@ -3,7 +3,7 @@
 }
 
 body {
-  padding: 0;
+  padding-top: 3rem;
   margin: 0;
 }
 
@@ -16,6 +16,17 @@ body {
   background-color: transparent;
 }
 
+/* .toggleButton{
+  background-color: #03045e;
+}
+
+.toggleButton{
+  background-color: #03045e;
+  width: 20px;
+  height: 100vh;
+  margin: 0;
+} */
+
 /* nav {
   width: 100%;
 } */
@@ -26,26 +37,36 @@ nav ul li {
 }
 
 .brand-name {
-  font-size: 35px;
+  font-size: 2rem;
 }
 
-.newBrandName {
+/* .newBrandName {
   font-size: 0;
-}
+} */
 
 .heronav {
   padding-left: 30px;
-  padding-right: 100px;
+  padding-right: 30px;
+  margin: 0;
+  background-color: #212529;
 }
+
+/* .button-nav{
+  display: none;
+} */
 
 .newHeroNav {
   background-color: #03045e;
-  height: auto;
+  /* height: auto; */
 }
 
 .removeNav {
-  font-size: 0;
   display: none;
+}
+
+.nav-items {
+  padding-left: 2rem;
+  margin-bottom: 0;
 }
 
 .style-link,
@@ -59,18 +80,90 @@ nav ul li {
   text-decoration: underline;
 }
 
-.fas,
-.fab {
+.header-content {
+  height: 100%;
+}
+
+.brand-name,
+.fa,
+.style-link {
+  font-size: 1.5rem;
+}
+
+.name-header {
   font-size: 2rem;
 }
 
-.header-content {
-  padding-left: 12rem;
-}
+/* .fas,
+.fab {
+  font-size: 2rem;
+} */
 
-.header-bottom {
-  height: 154px;
+/* .header-bottom {
+  height: 100px;
   width: 100%;
   background-color: #03045e;
-  opacity: 0.9;
+} */
+
+.content-area {
+  margin-top: 20px;
+}
+
+.my-img img {
+  width: 300px;
+  height: 400px;
+  margin-right: 10px;
+}
+
+.my-intro h4 span {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 50px;
+}
+
+.ed-ex {
+  margin-top: 50px;
+}
+
+.ed {
+  margin-top: 25px;
+}
+
+.dash {
+  font-size: 30px;
+  margin-right: 5px;
+  line-height: 0;
+}
+
+@media (max-width: 390px) {
+  body {
+    width: 120%;
+  }
+
+  .headerImage {
+    height: 100%;
+  }
+
+  /* .brand-name, .fa, .style-link{
+    font-size: 2rem;
+  }
+  
+  .name-header{
+    font-size: 2rem;
+  } */
+  /* .header-content{
+    padding-left: 1rem;
+  } */
+  .btn-shortlist {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 932px) {
+  .name-header {
+    font-size: 2.5rem;
+  }
+  /* .header-content{
+    padding-left: 1rem;
+  } */
 }
