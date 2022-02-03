@@ -16,21 +16,6 @@ body {
   background-color: transparent;
 }
 
-/* .toggleButton{
-  background-color: #03045e;
-}
-
-.toggleButton{
-  background-color: #03045e;
-  width: 20px;
-  height: 100vh;
-  margin: 0;
-} */
-
-/* nav {
-  width: 100%;
-} */
-
 nav ul li {
   list-style-type: none;
   padding: 1rem;
@@ -40,20 +25,12 @@ nav ul li {
   font-size: 2rem;
 }
 
-/* .newBrandName {
-  font-size: 0;
-} */
-
 .heronav {
   padding-left: 30px;
   padding-right: 30px;
   margin: 0;
   background-color: #212529;
 }
-
-/* .button-nav{
-  display: none;
-} */
 
 .newHeroNav {
   background-color: #03045e;
@@ -100,12 +77,6 @@ nav ul li {
   padding: 5px;
   color: white;
 }
-
-/* .header-bottom {
-  height: 100px;
-  width: 100%;
-  background-color: #03045e;
-} */
 
 .content-area {
   margin-top: 50px;
@@ -189,16 +160,6 @@ font-size: 20px;
     height: 100%;
   }
 
-  /* .brand-name, .fa, .style-link{
-    font-size: 2rem;
-  }
-  
-  .name-header{
-    font-size: 2rem;
-  } */
-  /* .header-content{
-    padding-left: 1rem;
-  } */
   .btn-shortlist {
     font-size: 10px;
   }
@@ -208,7 +169,4 @@ font-size: 20px;
   .name-header {
     font-size: 2.5rem;
   }
-  /* .header-content{
-    padding-left: 1rem;
-  } */
 }
