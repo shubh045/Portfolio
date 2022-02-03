@@ -94,10 +94,12 @@ nav ul li {
   font-size: 2rem;
 }
 
-/* .fas,
+.fas,
 .fab {
-  font-size: 2rem;
-} */
+  font-size: 1.5rem;
+  padding: 5px;
+  color: white;
+}
 
 /* .header-bottom {
   height: 100px;
@@ -106,7 +108,7 @@ nav ul li {
 } */
 
 .content-area {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .my-img img {
@@ -133,6 +135,49 @@ nav ul li {
   font-size: 30px;
   margin-right: 5px;
   line-height: 0;
+}
+
+.progress-container{
+  margin-top: 35px;
+}
+
+.strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+
+font-size: 20px;
+}
+
+.strike > h4 {
+  position: relative;
+  display: inline-block;
+}
+
+.strike > h4:before,
+.strike > h4:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  /* Here is the modification */
+  border-top: 4px solid grey;
+  border-width: 2px;
+}
+
+.strike > h4:before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.strike > h4:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.sec{
+  margin-top: 150px;
 }
 
 @media (max-width: 390px) {
