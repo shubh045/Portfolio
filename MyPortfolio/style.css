@@ -25,6 +25,10 @@ nav ul li {
   font-size: 2rem;
 }
 
+.brand-name:hover{
+  color: #eee;
+}
+
 .heronav {
   padding-left: 30px;
   padding-right: 30px;
