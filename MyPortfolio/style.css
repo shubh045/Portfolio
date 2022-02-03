@@ -5,6 +5,7 @@
 body {
   padding-top: 3rem;
   margin: 0;
+  background-color: #f1f3f6;
 }
 
 .headerImage {
@@ -75,11 +76,17 @@ nav ul li {
   font-size: 2rem;
 }
 
-.fas,
-.fab {
+.fa-envelope,
+.fa-linkedin,
+.fa-whatsapp {
   font-size: 1.5rem;
   padding: 5px;
   color: white;
+}
+
+.fa-github,
+.fa-gitlab{
+  font-size: 2rem;
 }
 
 .content-area {

@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top row heronav">
 
-        <a href="#" class="navbar-brand h1 brand-name col-6 pl-5">Shubham</a>
+        <a href="#profile" class="navbar-brand h1 brand-name col-6 pl-5">Shubham</a>
         <button class="navbar-toggler button-nav text-white" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent1" aria-controls="navbarToggleExternalContent4" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
             </ul>
         </div>
     </nav>
-    
+
     <header class="headerImage">
 
         <div class="d-flex align-items-center ml-2 ml-sm-5 header-content">
@@ -47,7 +47,8 @@
                 <h1 class="display-3 name-header">SHUBHAM</h1>
                 <h2 class="name-header">Computer Science & Engineering Student</h2>
                 <h2 class="name-header">Frontend Developer</h2>
-                <button class="btn btn-outline-primary btn-lg text-white btn-shortlist">Shortlist me</button>
+                <a href="./Contact.html" target="_blank"
+                    class="btn btn-outline-primary btn-lg text-white btn-shortlist">Shortlist me</a>
             </div>
         </div>
 
@@ -58,16 +59,38 @@
     <div class="container justify-content-center align-items-center content-area">
         <section class="section-1" id="profile">
             <div class="strike mb-5">
-                <h4>Profile</h4>
+                <h4 class="text-dark">Profile</h4>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 text-center align-items-center my-img">
-                    <img src="./images/2021-09-16.png" alt="">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center my-img">
+                    <img src="./images/2021-09-16.png" alt="My Image">
                 </div>
                 <div class="col-lg-8 col-md-6 col-sm-12 mt-lg-0 mt-5 my-intro">
 
-                    <h4><span>WHO I AM</span>I am an Engineering student pursuing my studies in the field of Computer
+                    <h4><span class="text-secondary">WHO I AM</span>I am an Engineering student pursuing my studies in
+                        the field of Computer
                         Science and exploring various technologies to make myself fit in this era.</h4>
+
+                        <div class="mt-4">
+                            <h5 class="text-secondary">View my developer profile on:</h5>
+                            <div class="d-flex">
+                                <div class="d-flex flex-column justify-content-between mr-4">
+                                    <a href="https://github.com/shubh045" target="_blank" class="pl-2"><i
+                                            class="fab fa-github text-secondary"></i></a>
+                                    <a href="https://github.com/shubh045" target="_blank" class=" text-decoration-none ">
+                                        <p class="text-secondary">GitHub</p>
+                                    </a>
+                                </div>
+    
+                                <div class="d-flex flex-column justify-content-between">
+                                    <a href="https://gitlab.com/Shubh045" target="_blank" class="pl-2"><i
+                                            class="fab fa-gitlab text-secondary"></i></a>
+                                    <a href="https://gitlab.com/Shubh045" target="_blank" class=" text-decoration-none">
+                                        <p class="text-secondary">GitLab</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
                     <div class="ed-ex">
                         <h2 class="display-4">Education & Experience</h2>
@@ -183,7 +206,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center mt-3">
-            <button class="btn btn-outline-warning">Shortlist me</button>
+            <a href="./Contact.html" target="blank" class="btn btn-outline-warning">Shortlist me</a>
         </div>
     </footer>
 
