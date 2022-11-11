@@ -1,23 +1,23 @@
-const heroNav = document.querySelector('.heronav');
+const heroNav = document.querySelector(".heronav");
 
 window.onload = () => {
-window.onscroll = () => {
+  window.onscroll = () => {
     let scroll = document.documentElement.scrollTop;
-    const headerHeight = document.documentElement.clientHeight * 0.80;
+    const headerHeight = document.documentElement.clientHeight * 0.8;
 
     if (scroll > headerHeight) {
-        heroNav.classList.add('newHeroNav');
+      heroNav.classList.add("newHeroNav");
     } else {
-        heroNav.classList.remove('newHeroNav');
+      heroNav.classList.remove("newHeroNav");
     }
 
     if (scroll > 80 && scroll < headerHeight) {
-        heroNav.classList.add('removeNav');
+      heroNav.classList.add("removeNav");
     } else {
-        heroNav.classList.remove('removeNav');
+      heroNav.classList.remove("removeNav");
     }
-}
-}
+  };
+};
 
 const sections = document.querySelectorAll("section[id]");
 
@@ -25,26 +25,26 @@ const sections = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", navHighlighter);
 
 function navHighlighter() {
-  
   // Get current scroll position
   let scrollY = window.pageYOffset;
   // Now we loop through sections to get height, top and ID values for each
-  sections.forEach(current => {
+  sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 150;
     const sectionId = current.getAttribute("id");
-    
+
     /*
     - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
     - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
     */
-    if (
-      scrollY > sectionTop &&
-      scrollY <= sectionTop + sectionHeight
-    ){
-      document.querySelector(".heronav a[href*=" + sectionId + "]").classList.add("active");
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".heronav a[href*=" + sectionId + "]")
+        .classList.add("active");
     } else {
-      document.querySelector(".heronav a[href*=" + sectionId + "]").classList.remove("active");
+      document
+        .querySelector(".heronav a[href*=" + sectionId + "]")
+        .classList.remove("active");
     }
   });
 }
